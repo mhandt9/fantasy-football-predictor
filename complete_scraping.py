@@ -19,10 +19,7 @@ def main():
     scraper.open_page(url)
     
     # Process the player data
-    scraper.process_players()
-    
-    # Save the data to CSV
-    scraper.save_data_to_csv('player_data.csv')
+    scraper.process_players(csv_file_name='players_data.csv')
     
     # Close the browser
     scraper.close()
