@@ -27,8 +27,8 @@ class PlayerScraper_All:
     def __accept_cookies(self, driver):
         """Clicks on accept in the cookies pop-up"""
         try:
-            # Wait for the cookie banner to be present (adjust time if necessary)
-            cookies_xpath = '//*[@id="qc-cmp2-ui"]/div[2]/div/button[2]'  # Change this if necessary
+            # Wait for the cookie banner to be present
+            cookies_xpath = '//*[@id="qc-cmp2-ui"]/div[2]/div/button[2]'
             WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.XPATH, cookies_xpath)))
             
             # Click the "Accept Cookies" button
@@ -45,48 +45,61 @@ class PlayerScraper_All:
         self.driver.execute_script("document.body.style.zoom='33%'")
         self.__accept_cookies(self.driver)
         
-    def process_players(self):
-        player_divs = self.driver.find_elements(By.CLASS_NAME, 'elemento_jugador')
+    def process_players(self, csv_file_name):
+        # Open the CSV file in append mode and create a writer object
+        with open(csv_file_name, mode='a', newline='', encoding='utf-8') as file:
+            fieldnames = ['position', 'team', 'link', 'name'] + [f'Points_GW{i}' for i in range(1, 39)]  # Adjust range if necessary
+            writer = csv.DictWriter(file, fieldnames=fieldnames)
+            
+            # Write header only if the file is empty or doesn't exist
+            if file.tell() == 0:
+                writer.writeheader()
+
+            # Find and iterate over all player elements
+            player_divs = self.driver.find_elements(By.CLASS_NAME, 'elemento_jugador')
+
+            for i, player in enumerate(tqdm(player_divs, desc="Processing Players", unit="player")):
+                try:
+                    player_data = {}
+                    player_data['position'] = player.get_attribute('data-posicion')
+                    player_data['team'] = player.get_attribute('data-equipo')
+
+                    # Click on the player to open their detailed info
+                    time.sleep(1.01)
+                    player.click()
+                    time.sleep(1.01)
+
+                    modal_content = self.driver.find_element(By.CLASS_NAME, 'modal-content')
+                    player_data['link'] = self.driver.find_element(By.CLASS_NAME, 'jugador.mt-auto.mb-1.d-flex.mx-auto').get_attribute('href')
+                    player_data['name'] = self.driver.find_element(By.CSS_SELECTOR, 'span.d-lg-block:nth-child(2)').text
+
+                    match_divs = self.driver.find_elements(By.CSS_SELECTOR, 'div.row.my-2')
+
+                    for match in match_divs:
+                        GW = match.find_element(By.CSS_SELECTOR, 'div.col-2.text-center.p-0').text
+                        points = match.find_elements(By.CSS_SELECTOR, 'div.col-3.text-center.p-0')[1].text
+                        player_data['Points_GW' + GW] = points
+
+                    # Append the current player's data to the CSV file
+                    writer.writerow(player_data)
+
+                    # Return to the main page and wait for the player list to reload
+                    self.driver.back()
+                    WebDriverWait(self.driver, 5).until(EC.presence_of_element_located((By.CLASS_NAME, 'lista_elementos')))
+                    player_divs = self.driver.find_elements(By.CLASS_NAME, 'elemento_jugador')
+
+                except TimeoutException:
+                    print(f"Timeout occurred while processing player: {player_data.get('name', 'Unknown')}")
+
+                except ElementNotInteractableException:
+                    # Retry logic if player interaction fails
+                    next_button = self.driver.find_element(By.CSS_SELECTOR, '.next')
+                    next_button.click()
+                    time.sleep(1.01)
+                    self.retry_player(player, csv_file_name)
+
         
-        for i, player in enumerate(tqdm(player_divs, desc="Processing Players", unit="player")):
-            try:
-                player_data = {}
-                player_data['position'] = player.get_attribute('data-posicion')
-                player_data['team'] = player.get_attribute('data-equipo')
-
-                # Click on the player to open their detailed info
-                time.sleep(1.01)
-                player.click()
-                time.sleep(1.01)
-
-                modal_content = self.driver.find_element(By.CLASS_NAME, 'modal-content')
-                player_data['link'] = self.driver.find_element(By.CLASS_NAME, 'jugador.mt-auto.mb-1.d-flex.mx-auto').get_attribute('href')
-                player_data['name'] = self.driver.find_element(By.CSS_SELECTOR, 'span.d-lg-block:nth-child(2)').text
-
-                match_divs = self.driver.find_elements(By.CSS_SELECTOR, 'div.row.my-2')
-
-                for match in match_divs:
-                    GW = match.find_element(By.CSS_SELECTOR, 'div.col-2.text-center.p-0').text
-                    points = match.find_elements(By.CSS_SELECTOR, 'div.col-3.text-center.p-0')[1].text
-                    player_data['Points_GW' + GW] = points
-
-                self.player_data_list.append(player_data)
-
-                self.driver.back()
-                WebDriverWait(self.driver, 5).until(EC.presence_of_element_located((By.CLASS_NAME, 'lista_elementos')))
-                player_divs = self.driver.find_elements(By.CLASS_NAME, 'elemento_jugador')
-
-            except TimeoutException:
-                print(f"Timeout occurred while processing player: {player_data.get('name', 'Unknown')}")
-                
-            except ElementNotInteractableException:
-                next_button = self.driver.find_element(By.CSS_SELECTOR, '.next')
-                next_button.click()
-
-                time.sleep(1.01)
-                self.retry_player(player)
-        
-    def retry_player(self, player):
+    def retry_player(self, player, csv_file_name):
         player_data = {}
         player_data['position'] = player.get_attribute('data-posicion')
         player_data['team'] = player.get_attribute('data-equipo')
@@ -105,16 +118,15 @@ class PlayerScraper_All:
             points = match.find_elements(By.CSS_SELECTOR, 'div.col-3.text-center.p-0')[1].text
             player_data['Points_GW' + GW] = points
 
-        self.player_data_list.append(player_data)
+        # Open the CSV file in append mode and write this player's data
+        with open(csv_file_name, mode='a', newline='', encoding='utf-8') as file:
+            fieldnames = ['position', 'team', 'link', 'name'] + [f'Points_GW{i}' for i in range(1, 39)]
+            writer = csv.DictWriter(file, fieldnames=fieldnames)
+            writer.writerow(player_data)
+
         self.driver.back()
         WebDriverWait(self.driver, 5).until(EC.presence_of_element_located((By.CLASS_NAME, 'lista_elementos')))
-        
-    def save_data_to_csv(self, file_name):
-        with open(file_name, mode='w', newline='', encoding='utf-8') as file:
-            writer = csv.DictWriter(file, fieldnames=self.player_data_list[0].keys())
-            writer.writeheader()
-            writer.writerows(self.player_data_list)
-        print(f"Data saved to {file_name}")
+
         
     def close(self):
         self.driver.quit()
