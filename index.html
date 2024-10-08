@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Formation</title>
+</head>
+<body>
+    <h1>Select Players for Team Formation</h1>
+    <form id="formation-form">
+        <h2>Attackers</h2>
+        <select id="attacker1">
+            <option value="Lamine Yamal">Lamine Yamal</option>
+            <option value="Robert Lewandowski">Robert Lewandowski</option>
+            <option value="Raphinha">Raphinha</option>
+        </select><br>
+        <select id="attacker2">
+            <option value="Robert Lewandowski">Robert Lewandowski</option>
+            <option value="Lamine Yamal">Lamine Yamal</option>
+            <option value="Raphinha">Raphinha</option>
+        </select><br>
+        <select id="attacker3">
+            <option value="Raphinha">Raphinha</option>
+            <option value="Lamine Yamal">Lamine Yamal</option>
+            <option value="Robert Lewandowski">Robert Lewandowski</option>
+        </select><br>
+
+        <h2>Midfielders</h2>
+        <select id="midfielder1">
+            <option value="Pedri">Pedri</option>
+            <option value="Gavi">Gavi</option>
+            <option value="Frenkie de Jong">Frenkie de Jong</option>
+        </select><br>
+        <select id="midfielder2">
+            <option value="Gavi">Gavi</option>
+            <option value="Pedri">Pedri</option>
+            <option value="Frenkie de Jong">Frenkie de Jong</option>
+        </select><br>
+        <select id="midfielder3">
+            <option value="Frenkie de Jong">Frenkie de Jong</option>
+            <option value="Gavi">Gavi</option>
+            <option value="Pedri">Pedri</option>
+        </select><br>
+        <select id="midfielder4">
+            <option value="Marc Casadó">Marc Casadó</option>
+            <option value="Gavi">Gavi</option>
+            <option value="Pedri">Pedri</option>
+        </select><br>
+
+        <h2>Defenders</h2>
+        <select id="defender1">
+            <option value="Iñigo Martínez">Iñigo Martínez</option>
+            <option value="Jules Koundé">Jules Koundé</option>
+            <option value="Ronald Araújo">Ronald Araújo</option>
+        </select><br>
+        <select id="defender2">
+            <option value="Jules Koundé">Jules Koundé</option>
+            <option value="Iñigo Martínez">Iñigo Martínez</option>
+            <option value="Ronald Araújo">Ronald Araújo</option>
+        </select><br>
+        <select id="defender3">
+            <option value="Ronald Araújo">Ronald Araújo</option>
+            <option value="Jules Koundé">Jules Koundé</option>
+            <option value="Iñigo Martínez">Iñigo Martínez</option>
+        </select><br>
+
+        <h2>Goalkeeper</h2>
+        <select id="goalkeeper">
+            <option value="Ter Stegen">Ter Stegen</option>
+        </select><br>
+
+        <button type="submit">Generate Image</button>
+    </form>
+
+    <script>
+        document.getElementById('formation-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Collect selected player values
+            const attacker1 = document.getElementById('attacker1').value;
+            const attacker2 = document.getElementById('attacker2').value;
+            const attacker3 = document.getElementById('attacker3').value;
+            const midfielder1 = document.getElementById('midfielder1').value;
+            const midfielder2 = document.getElementById('midfielder2').value;
+            const midfielder3 = document.getElementById('midfielder3').value;
+            const midfielder4 = document.getElementById('midfielder4').value;
+            const defender1 = document.getElementById('defender1').value;
+            const defender2 = document.getElementById('defender2').value;
+            const defender3 = document.getElementById('defender3').value;
+            const goalkeeper = document.getElementById('goalkeeper').value;
+
+            // Send the values to the server (backend)
+            fetch('/generate-image', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    attacker1: attacker1,
+                    attacker2: attacker2,
+                    attacker3: attacker3,
+                    midfielder1: midfielder1,
+                    midfielder2: midfielder2,
+                    midfielder3: midfielder3,
+                    midfielder4: midfielder4,
+                    defender1: defender1,
+                    defender2: defender2,
+                    defender3: defender3,
+                    goalkeeper: goalkeeper
+                })
+            })
+            .then(response => response.blob())
+            .then(imageBlob => {
+                const imageObjectURL = URL.createObjectURL(imageBlob);
+                const img = document.createElement('img');
+                img.src = imageObjectURL;
+                document.body.appendChild(img);
+            });
+        });
+    </script>
+</body>
+</html>
