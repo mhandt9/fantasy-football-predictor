@@ -18,11 +18,11 @@ function parseCSV(data) {
 
     rows.forEach(row => {
         const columns = row.split(',');
-        if (columns[0] && columns[1] && columns[2]) {  // Ensure all columns are present
+        if (columns[0] && columns[1] && columns[2]) {
             players.push({
-                name: columns[0].trim(),
-                position: columns[1].trim(),
-                points: columns[2].trim()
+                // index: columns[0].trim(),
+                name: columns[1].trim(),
+                prediction: columns[2].trim()
             });
         }
     });
@@ -35,7 +35,7 @@ function populateDropdown(players) {
     const playerDropdown = document.getElementById('playerDropdown');
     players.forEach(player => {
         const playerDiv = document.createElement('div');
-        playerDiv.textContent = `${player.name} (${player.position}) - Points: ${player.points}`; // Display player name, position, and points
+        playerDiv.textContent = `${player.name} (${player.position}) - Points: ${player.prediction}`; // Display player name, position, and points
         playerDropdown.appendChild(playerDiv);
     });
 }
