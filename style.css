@@ -1,0 +1,109 @@
+.header {
+    padding: 40px;
+    text-align: center;
+    background: #085808;
+    color: white;
+    font-size: 30px;
+    font-family: Helvetica;
+}
+
+/* Container needed to position the button. Adjust the width as needed */
+.container {
+    position: relative;
+    width: 50%;
+}
+
+/* Make the image responsive */
+.container img {
+    width: 100%;
+    height: auto;
+    margin-left: 100%;
+}
+
+.dropdown {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 60px;
+    margin-left: 106%;
+}
+
+.dropdown button {
+    background-color: hsl(0, 0%, 80%);
+    color: black;
+    padding: 10px 60px;
+    border: none;
+    cursor: pointer;
+    font-family: Helvetica;
+}
+
+.dropdown a {
+    display: block;
+    color: black;
+    font-family: Helvetica;
+    text-decoration: none;
+    padding: 10px 60px;
+}
+
+.dropdown .content {
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 0%, 95%);
+    min-width: 100px;
+}
+
+.dropdown:hover .content {
+    display: block;
+}
+
+.dropdown:hover button {
+    background-color: hsl(0, 0%, 70%);
+}
+
+.dropdown a:hover {
+    background-color: hsl(0, 0%, 90%);
+}
+
+.dropdown-p {
+    display: inline-block;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    margin-top: 35.5%;
+    margin-left: 180%;
+}
+
+.dropdown-p button {
+    background-color: hsla(0, 90%, 4%, 0.7);
+    color: white;
+    padding: 50px 40px;
+    border: none;
+    cursor: pointer;
+    font-family: Helvetica;
+    font-size: 30px;
+    border-radius: 15px;
+}
+
+.dropdown-p a {
+    display: block;
+    color: black;
+    font-family: Helvetica;
+    text-decoration: none;
+    padding: 10px 60px;
+}
+
+.dropdown-p .players {
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 0%, 95%);
+    min-width: 100px;
+}
+
+.dropdown-p:hover button {
+    background-color: hsl(0, 0%, 70%);
+}
+
+.dropdown-p a:hover {
+    background-color: hsl(0, 0%, 90%);
+}
