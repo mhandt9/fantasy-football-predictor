@@ -2,62 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Display CSV</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <title>Football Fantasy Predictions</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="header">
+        <h1>La Liga Fantasy Football Predictions</h1>
+    </div>
+    <div class="container">
+        <img src="img/pitch.png" alt="LineUp">
+        
+        <div class="dropdown">
+            <button>Select Formation</button>
+            <div class="content">
+                <a href="">4-4-2</a>
+                <a href="">4-3-3</a>
+                <a href="">3-5-2</a>
+            </div>
+        </div>
 
-<h1>CSV Data</h1>
-<table id="csv-table" border="1">
-    <thead>
-        <tr id="csv-header"></tr>
-    </thead>
-    <tbody id="csv-body"></tbody>
-</table>
+        <div class="dropdown-p">
+            <button id="togglePlayerDropdown">+</button>
+            <div class="players" id="playerDropdown" style="display: none;">
+            </div>
+        </div>
+    </div>
 
-<script>
-    // URL of CSV file
-    const csvUrl = 'https://github.com/mhandt9/fantasy-football-predictor/blob/main/GW10_pred.csv';
-
-    // Function to fetch and display CSV data
-    fetch(csvUrl)
-        .then(response => response.text())
-        .then(data => {
-            Papa.parse(data, {
-                header: true, // Parse the CSV file with headers
-                complete: function(results) {
-                    displayCSV(results.data);
-                }
-            });
-        });
-
-    // Function to display CSV data in the table
-    function displayCSV(data) {
-        const tableHeader = document.getElementById('csv-header');
-        const tableBody = document.getElementById('csv-body');
-
-        if (data.length > 0) {
-            // Create table headers
-            Object.keys(data[0]).forEach(header => {
-                let th = document.createElement('th');
-                th.textContent = header;
-                tableHeader.appendChild(th);
-            });
-
-            // Create table rows
-            data.forEach(row => {
-                let tr = document.createElement('tr');
-                Object.values(row).forEach(cell => {
-                    let td = document.createElement('td');
-                    td.textContent = cell;
-                    tr.appendChild(td);
-                });
-                tableBody.appendChild(tr);
-            });
-        }
-    }
-</script>
-
+    <script src="script.js"></script>
 </body>
 </html>
