@@ -1,4 +1,3 @@
-// script.js
 // Function to fetch and parse the CSV file
 async function loadPlayers() {
     const response = await fetch('GW10_pred.csv');
@@ -7,7 +6,8 @@ async function loadPlayers() {
     console.log("CSV Data Loaded: ", data); // Debugging: Check if CSV is being loaded
     
     const players = parseCSV(data);
-    populateDropdown(players);
+    populateTable(players);
+    setupSearch(players);
 }
 
 
@@ -16,11 +16,10 @@ function parseCSV(data) {
     const rows = data.split('\n');
     const players = [];
 
-    rows.forEach(row => {
+    rows.forEach((row, index) => {
         const columns = row.split(',');
-        if (columns[0] && columns[1] && columns[2]) {
+        if (index !== 0 && columns[1] && columns[2]) {  // Ignore the first row (header)
             players.push({
-                // index: columns[0].trim(),
                 name: columns[1].trim(),
                 prediction: columns[2].trim()
             });
@@ -30,32 +29,44 @@ function parseCSV(data) {
     return players;
 }
 
-// Function to populate the dropdown with player names as plain text
-function populateDropdown(players) {
-    const playerDropdown = document.getElementById('playerDropdown');
+// Function to populate the table with player names and predictions
+function populateTable(players) {
+    const tableBody = document.getElementById('playersTable').getElementsByTagName('tbody')[0];
+    tableBody.innerHTML = '';  // Clear the table first to prevent duplication
+    
     players.forEach(player => {
-        const playerDiv = document.createElement('div');
-        playerDiv.textContent = `${player.name} (${player.position}) - Points: ${player.prediction}`; // Display player name, position, and points
-        playerDropdown.appendChild(playerDiv);
+        const row = document.createElement('tr');
+        
+        const nameCell = document.createElement('td');
+        nameCell.textContent = player.name;
+        row.appendChild(nameCell);
+        
+        const predictionCell = document.createElement('td');
+        predictionCell.textContent = player.prediction;
+        row.appendChild(predictionCell);
+        
+        tableBody.appendChild(row);
     });
 }
 
-// Function to toggle the player dropdown visibility
-function toggleDropdown() {
-    console.log("Dropdown Toggled"); // Debugging: Check if the button click is registered
-    
-    const playerDropdown = document.getElementById('playerDropdown');
-    if (playerDropdown.style.display === "none" || playerDropdown.style.display === "") {
-        playerDropdown.style.display = "block";
-    } else {
-        playerDropdown.style.display = "none";
-    }
+// Function to setup the search inputs for filtering the table
+function setupSearch(players) {
+    document.getElementById('searchName').addEventListener('input', function() {
+        const filteredPlayers = players.filter(player => 
+            player.name.toLowerCase().includes(this.value.toLowerCase())
+        );
+        populateTable(filteredPlayers);
+    });
+
+    // document.getElementById('searchPrediction').addEventListener('input', function() {
+    //     const filteredPlayers = players.filter(player => 
+    //         player.prediction.toLowerCase().includes(this.value.toLowerCase())
+    //     );
+    //     populateTable(filteredPlayers);
+    // });
 }
 
 // Call the function to load players when the page loads
 window.onload = function() {
     loadPlayers();
-    
-    // Add event listener to the "+" button to toggle the dropdown
-    document.getElementById('togglePlayerDropdown').addEventListener('click', toggleDropdown);
 };

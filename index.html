@@ -9,21 +9,42 @@
     <div class="header">
         <h1>La Liga Fantasy Football Predictions</h1>
     </div>
-    <div class="container">
-        <img src="img/pitch.png" alt="LineUp">
-        
-        <div class="dropdown">
-            <button>Select Formation</button>
-            <div class="content">
-                <a href="">4-4-2</a>
-                <a href="">4-3-3</a>
-                <a href="">3-5-2</a>
-            </div>
+
+    <div class="main-content">
+        <div class="table-container">
+            <table id="playersTable">
+                <thead>
+                    <tr>
+                        <th>
+                            Player Name
+                            <input type="text" id="searchName" placeholder="Search Player">
+                        </th>
+                        <th>
+                            Prediction
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
         </div>
 
-        <div class="dropdown-p">
-            <button id="togglePlayerDropdown">+</button>
-            <div class="players" id="playerDropdown" style="display: none;">
+        <div class="container">
+            <img src="img/pitch.png" alt="LineUp">
+            
+            <div class="dropdown">
+                <button>Select Formation</button>
+                <div class="content">
+                    <a href="">4-4-2</a>
+                    <a href="">4-3-3</a>
+                    <a href="">3-5-2</a>
+                </div>
+            </div>
+
+            <div class="dropdown-p">
+                <button id="togglePlayerDropdown">+</button>
+                <div class="players" id="playerDropdown" style="display: none;">
+                </div>
             </div>
         </div>
     </div>
