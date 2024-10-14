@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Football Fantasy Predictions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>La Liga Fantasy Football Predictions</h1>
+        <nav>
+            <a href="index.html">Predictions</a>
+            <a href="explainability.html">Explainability</a>
+            <a href="metrics.html">Metrics</a>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <div class="textbox">
+            <h2>Model</h2>
+            <p>The utilized model is a Random Forest Regressor. It works by training a large number 
+                of decision trees on different subsamples of the dataset and features. Predictions are made by averaging over the trees. 
+                This is preferable over a single decision tree as it avoids overfitting on the training data.</p>
+            <h2>Data</h2>
+            <p>I scraped the data from two sources:
+                <ul><li>Player data from <a href="https://www.futbolfantasy.com/"><b>FutbolFantasy</b></a></li>
+                    <li>Match data from <a href="https://fbref.com/en/"><b>FBREF</b></a></li></ul>
+                The resulting merged dataset has a row for each player performance, which is the target variable 
+                and is to be predicted with the other columns, which exclusively contain information that is known before 
+                the match starts (see features below).
+            </p>
+            <p>The Features used for this model are the following: 
+                <ul><li><b>Player Name:</b> Label encoded player names</li>
+                    <li><b>Position</b> Label encoded position</li>
+                    <li><b>Home?:</b> Binary, is 1 when the match is played at the home stadium</li>
+                    <li><b>Team Id</b></li>
+                    <li><b>Opponent Id</b></li>
+                    <li><b>Points_TminX:</b> Points achieved by the player in the last three matches</li></ul> 
+            </p>
+            <h2>Explainability / Interpretability</h2>
+            <p>Random forests are not intrinsically interpretable since their prediction
+                results from averaging many decision trees. One way to get a notion of how the model is making predictions is to look
+                at how much an input variable (feature) influences the output. This can be done by computing the mean decrease in impurity after a split for each feature. 
+                Scikit-Learn offers an implementation, the results are shown in the table to the right.
+            </p>
+            <h3>Sources</h3>
+            <p><a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html#sklearn.ensemble.RandomForestRegressor">Scikit-Learn</a>
+                <a href="https://arxiv.org/pdf/2001.04295">E.Scornet (2023)</a>
+                <a href="https://www.youtube.com/results?search_query=statquest+random+forest">StatsQuest</a></p>
+        </div>
+
+        <div class="container-features">
+            <img src="img/importances.png" alt="FeatureImportances">
+    
+    </div>
+
+
+</body>
+
+</html>

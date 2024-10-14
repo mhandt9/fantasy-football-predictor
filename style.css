@@ -6,6 +6,25 @@
     color: white;
     font-size: 20px;
     font-family: Helvetica;
+    border-radius: 1%;
+}
+
+nav{
+    /* float: none; */
+    line-height: 20px;
+}
+
+nav a{
+    text-decoration:none;
+    font-family: Helvetica;
+    font-size: 18px;
+    color: green;
+    padding: 20px 10px;
+}
+
+nav a:hover{
+    background: white;
+    color: green;
 }
 
 body {
@@ -31,6 +50,35 @@ body {
     background-color: rgb(64, 64, 64);
 }
 
+.textbox{
+    width: 40%;
+    font-family: Helvetica;
+    font-size: 14px;
+    background-color: black;
+    color: white;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-radius: 1%;
+}
+
+.textbox a{
+    color: green;
+    padding: 0px 10px;
+}
+
+.textbox ul{
+    background-color: grey;
+    color: black;
+    font-size: 14px;
+    padding: 1%;
+    border-radius: 1%;
+}
+
+.textbox ul a{
+    color: black;
+    text-decoration:underline;
+}
+
 table {
     width: 100%;
     font-family: Helvetica;
@@ -54,11 +102,23 @@ table tr:hover {
     background-color: rgb(75, 75, 75);
 }
 
+.container-features{
+    width: 55%;
+    background-color: black;
+    padding: 10px;
+    border-radius: 1%;
+}
+
+.container-features img {
+    max-width: 100%;
+    height: auto;
+}
 
 .container {
     width: 40%;
     background-color: black;
     padding: 10px;
+    border-radius: 1%;
 }
 
 .container img {

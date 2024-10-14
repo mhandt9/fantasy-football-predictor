@@ -1,6 +1,6 @@
 // Function to fetch and parse the CSV file
 async function loadPlayers() {
-    const response = await fetch('GW10_pred.csv');
+    const response = await fetch('GW10.csv');
     const data = await response.text();
 
     console.log("CSV Data Loaded: ", data); // Debugging: Check if CSV is being loaded
@@ -18,9 +18,10 @@ function parseCSV(data) {
 
     rows.forEach((row, index) => {
         const columns = row.split(',');
-        if (index !== 0 && columns[1] && columns[2]) {  // Ignore the first row (header)
+        if (index !== 0 && columns[0] && columns[1] && columns[2]) {  // Ignore the first row (header)
             players.push({
-                name: columns[1].trim(),
+                name: columns[0].trim(),
+                position: columns[1].trim(),
                 prediction: columns[2].trim()
             });
         }
@@ -40,6 +41,10 @@ function populateTable(players) {
         const nameCell = document.createElement('td');
         nameCell.textContent = player.name;
         row.appendChild(nameCell);
+
+        const posCell = document.createElement('td');
+        posCell.textContent = player.position;
+        row.appendChild(posCell);
         
         const predictionCell = document.createElement('td');
         predictionCell.textContent = player.prediction;
