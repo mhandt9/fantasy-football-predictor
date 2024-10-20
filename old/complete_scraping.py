@@ -1,5 +1,5 @@
 import argparse
-from scraping_utils import PlayerScraper_All
+from old.scraping_utils import PlayerScraper_All
 
 def main():
     # Set up argument parsing
