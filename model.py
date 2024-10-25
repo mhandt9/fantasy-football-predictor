@@ -76,4 +76,4 @@ def sort_preds(df):
     return df_sorted.drop('helper_col', axis=1)
 
 prediction = sort_preds(prediction)
-prediction.to_csv('GW'+str(MWS_PLAYED)+'_pred.csv')
+prediction.to_csv('GW'+str(MWS_PLAYED)+'_pred.csv', index=False)
