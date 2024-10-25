@@ -1,505 +1,506 @@
-Name,Prediction
-Adrià Altimira,6
-Adrià Pedrosa,6
-Nicolas Pépé,5
-Adnan Januzaj,5
-Beñat Prados,5
-Jan Oblak,4
-Álex Berenguer,4
-Anastasios Douvikas,4
-Cyle Larin,4
-Antoine Griezmann,3
-Íñigo Ruiz de Galarreta,3
-Julián Álvarez,3
-Alex Padilla,3
-Unai Gómez,3
-Andoni Gorosabel,3
-Marko Dmitrovic,3
-Óscar De Marcos,3
-Jude Bellingham,3
-André Ferreira,3
-Jorge de Frutos,3
-Javier Manquillo,3
-Florian Lejeune,3
-Antonio Rüdiger,3
-Pape Gueye,3
-Hugo Álvarez ,3
-Borja Iglesias,3
-Arnau Martínez,3
-Alejandro Francés,3
-Carl Starfelt,3
-Antonio Raíllo,3
-Jon Aramburu,3
-Yuri Berchiche,3
-Luis Milla,3
-Yangel Herrera,3
-Sergio Gómez,3
-Takefusa Kubo,3
-Luka Modric,3
-Vinicius Junior,3
-Chidera Ejuke,3
-Éder Militão,3
-Thierno Barry,3
-Bryan Gil,3
-Álex Baena,3
-Augusto Batalla,3
-Joan Garcia,2
-Rodrigo De Paul,2
-José María Giménez,2
-Sergio Herrera,2
-Ante Budimir,2
-Paulo Gazzaniga,2
-Miguel Gutiérrez,2
-Nahuel Tenaglia,2
-Santi Comesaña,2
-Abel Ruiz,2
-Williot Swedberg,2
-Carlos Dominguez,2
-Fran Beltrán,2
-Unai López,2
-Álvaro García,2
-Alberto Moleiro,2
-Christian Stuani,2
-Daniel Carvajal,2
-Aurélien Tchouaméni,2
-Ilias Akhomach,2
-Arnaut Danjuma,2
-Nayef Aguerd,2
-Federico Valverde,2
-Loïc Badé,2
-Örjan Nyland,2
-Rui Silva,2
-Omar Alderete,2
-Vitor Roque,2
-Natan,2
-Chimy Ávila,2
-Álex Remiro,2
-Mikel Jauregizar,2
-Aitor Paredes,2
-Álvaro Aguado,1
-Juan Berrocal,1
-Carles Pérez,1
-Álex Sola,1
-Mauro Arambarri,1
-Ander Herrera,1
-Renato Tapia,1
-Roberto López,1
-Pablo Ibáñez,1
-Dani Vivian,1
-Oihan Sancet,1
-Alejo Véliz,1
-Ferland Mendy,1
-Andriy Lunin,1
-Nemanja Gudelj,1
-Lucien Agoume,1
-Benito Ramírez,1
-Valery Fernández,1
-Alex Suárez,1
-Valentin Rosier,1
-Ricardo Rodriguez,1
-Cédric Bakambu,1
-Eduardo Camavinga,1
-Mikel Oyarzabal,1
-Luka Sucic,1
-Aitor Ruibal,1
-Pau Cubarsí,1
-Pau Víctor,1
-Iván Martín,1
-Gabriel Misehouy,1
-Donny van de Beek,1
-Yaser Asprilla,1
-Ladislav Krejcí,1
-Santiago Mouriño,1
-Toni Martinez,1
-Abde Rebbach,1
-Carlos Benavidez,1
-Tomás Conechny,1
-Asier Villalibre,1
-Antonio Blanco,1
-Carlos Vicente,1
-Stoichkov,1
-Ander Guevara,1
-Kylian Mbappé,1
-Iago Aspas,1
-Vicente Guaita,1
-Marcos Alonso,1
-Óscar Mingueza,1
-Alfonso González,1
-Pablo Barrios,1
-Koke Resurrección,1
-Alexander Sorloth,1
-Óscar Trejo,1
-Sergio Camello,1
-Íñigo Martínez,1
-Sergi Domínguez,1
-Isi Palazón,1
-Pablo Torre,1
-Raúl Chasco,1
-Abdul Mumin,1
-Nahuel Molina,1
-Conor Gallagher,1
-Rodrigo Riquelme,1
-Reinildo Mandava,1
-Clément Lenglet,1
-Alejandro Catena,1
-Bryan Zaragoza,1
-Abel Bretones,1
-Álvaro Djaló,1
-Álvaro Tejero,1
-Mamadou Sylla,0
-Javi Galán,0
-Amath Ndiaye,0
-Selim Amallah,0
-Gerard Gumbau,0
-Ansu Fati,0
-Omar Mascarell,0
-José Manuel Copete,0
-Antonio Lato,0
-Diego Javier Llorente,0
-Héctor Bellerín,0
-Giovani Lo Celso,0
-Alejandro Balde,0
-Manu Sánchez,0
-Ángel Correa,0
-Robin Le Normand,0
-Axel Witsel,0
-Yarek Gasiorowski,0
-Luis Rioja,0
-Pedri González,0
-Brian Oliván,0
-Pol Lozano,0
-Igor Zubeldia,0
-Jorge Sáenz,0
-Alex Kral,0
-Abde Ezzalzouli,0
-Mikel Vesga,0
-Nico Williams,0
-David Soria,0
-Raul Moro,0
-José Ángel Carmona,0
-Chiquinho,0
-Dodi Lukebakio,0
-Martín Zubimendi,0
-Arda Güler,0
-Brahim Díaz,0
-Javi Hernández,0
-Pablo Marín,0
-Íñigo Lekue,0
-Jofre Carreras,0
-Aimar Oroz,0
-Iñaki Williams,0
-Anuar Mohamed,0
-Mario Maroto,0
-Mario Martín,0
-Abdulai Juma Bah,0
-Pepelu,0
-Franco Cervi,0
-Hugo Sotelo,0
-Carlos Martín,0
-Antonio Sivera,0
-Raúl Albiol,0
-Abdel Abqar,0
-Ramón Terrats,0
-Raphinha,0
-Jon Guridi,-1
-Adrián Pica,-1
-Robert Navarro,-1
-Leo Román,-1
-Pablo Fornals,-1
-Johnny Cardoso,-1
-Seydouba Cisse,-1
-Darko Brasanac,-1
-Enric Franquesa,-1
-Sergi Cardona,-1
-Lamine Yamal,-1
-Adrián Embarba,-1
-Robert Lewandowski,-1
-Cristian Portu,-1
-Jhon Solís,-1
-Ander Barrenetxea,-1
-Romain Perraud,-1
-Adama Boiro,-1
-Carlos Romero,-1
-Gorka Guruzeta,-1
-Pere Milla,-1
-Diego Rico,-1
-Chrisantus Uche,-1
-Alvaro Rodríguez,-1
-Bertug Yildirim,-1
-Marash Kumbulla,-1
-Sergi Gómez,-1
-Irvin Cardona,-1
-Omar El Hilali,-1
-Walid Cheddira,-1
-Leandro Cabrera,-1
-Carles Aleñá,-1
-Alberto Risco,-1
-Óscar Rodríguez,-1
-Kelechi Iheanacho,-1
-Dinko Horkas,-1
-Álex Muñoz,-1
-Fábio Silva,-1
-Dário Essugo,-1
-Borja Mayoral,-1
-Yellu Santiago,-1
-Dani Rodríguez,-1
-Pablo Maffeo,-1
-Abdon Prats,-1
-Juanlu Sánchez,-1
-Viti Rozada,-1
-Albert Sambi Lokonga,-1
-José Arnáiz,-1
-Iván Sánchez,-1
-Jesús Areso,-1
-Víctor Meseguer,-1
-Marcos André,-1
-Thierry Correia,-1
-Hugo Guillamón,-1
-Iñaki Peña,-1
-Christian Mosquera,-1
-Javi Rodríguez,-1
-Ilaix Moriba,-1
-Pablo Durán,-1
-Dimitri Foulquier,-1
-Pathé Ciss,-1
-Óscar Valentín,-1
-James Rodríguez,-1
-Jules Koundé,-1
-Daley Blind,-1
-Aleksandar Sedlar,-1
-Eric Bailly,-1
-Logan Costa,-1
-Dani Parejo,-1
-Kiko Femenia,-1
-Diego Conde,-1
-Oliver McBurnie,-1
-Luka Romero,-1
-José Gragera,-2
-Fernando Calero,-2
-Miguel de la Fuente,-2
-Antoniu Roca,-2
-Sébastien Haller,-2
-Marc Roca,-2
-Mika Mármol,-2
-Peque,-2
-Gonzalo Montiel,-2
-Marvin Park,-2
-Aihen Muñoz,-2
-Beñat Turrientes,-2
-Dominik Greif,-2
-Samú Costa,-2
-Isco Alarcón,-2
-Iker Losada,-2
-Sergi Altimira,-2
-Juanmi Jiménez,-2
-Lucas Vázquez,-2
-Juan Bernat,-2
-Hugo Novoa,-2
-Tanguy Nianzou,-2
-Randy Nteka,-2
-Iván Balliu,-2
-Bojan Miovski,-2
-Joan Jordan,-2
-Damián Rodríguez,-2
-Samuel Lino,-2
-Sergio Carreira,-2
-Giorgi Mamardashvili,-2
-César Tárrega,-2
-Giuliano Simeone,-2
-Kike Pérez,-2
-Darwin Machís,-2
-Rubén García,-2
-Boyomo,-2
-Rubén Peña,-2
-Moi Gómez,-2
-Javi Puado,NOT PLAYING
-Edu Expósito,NOT PLAYING
-Fernando Pacheco,NOT PLAYING
-Salvi Sánchez,NOT PLAYING
-Omar Sadik,NOT PLAYING
-Naci Ünüvar,NOT PLAYING
-Ángel Fortuño,NOT PLAYING
-Karl Hein,NOT PLAYING
-Luis Pérez,NOT PLAYING
-Stanko Juric,NOT PLAYING
-Javi Sánchez,NOT PLAYING
-Lucas Rosa,NOT PLAYING
-Juan Miguel Latasa,NOT PLAYING
-Chuki,NOT PLAYING
-Kenedy,NOT PLAYING
-César de la Hoz,NOT PLAYING
-Eray Cömert,NOT PLAYING
-Cenk Özkacar,NOT PLAYING
-Álvaro Aceves,NOT PLAYING
-Pep Chavarría,NOT PLAYING
-Dani Cárdenas,NOT PLAYING
-Alfonso Espino,NOT PLAYING
-Pedro Díaz,NOT PLAYING
- Diego Méndez,NOT PLAYING
-Raúl De Tomás,NOT PLAYING
-Aridane Hernández,NOT PLAYING
-Pelayo Fernández,NOT PLAYING
-Jonathan Montiel,NOT PLAYING
-Sergi Guardiola,NOT PLAYING
-Andrei Ratiu,NOT PLAYING
-Sandro Ramírez,NOT PLAYING
-Jasper Cillessen,NOT PLAYING
-Kirian Rodríguez,NOT PLAYING
-Scott McKenna,NOT PLAYING
-Jaime Mata,NOT PLAYING
-Manuel Fuster,NOT PLAYING
-Enzo Loiodice,NOT PLAYING
-Marc Cardona,NOT PLAYING
-Juanma Herzog,NOT PLAYING
-Fabio González,NOT PLAYING
-Daley Sinkgraven,NOT PLAYING
-Álvaro Valles,NOT PLAYING
-Iván Gil,NOT PLAYING
-Javi Muñoz,NOT PLAYING
-José Campaña,NOT PLAYING
-Pejiño,NOT PLAYING
-Álvaro Killane,NOT PLAYING
-Rodrygo Goes,NOT PLAYING
-Thibaut Courtois,NOT PLAYING
-Fran García,NOT PLAYING
-Endrick,NOT PLAYING
-Dani Ceballos,NOT PLAYING
-David Alaba,NOT PLAYING
-Jacobo Ramón,NOT PLAYING
-Jesús Vallejo,NOT PLAYING
-Juan Soriano,NOT PLAYING
-Yvan Neyou,NOT PLAYING
-Daniel Raba,NOT PLAYING
-Diego García,NOT PLAYING
-Julián Chicco,NOT PLAYING
-Munir El Haddadi,NOT PLAYING
-Matija Nastasic,NOT PLAYING
-Alvin Abajas,NOT PLAYING
-Naim García,NOT PLAYING
-Jackson Porozo,NOT PLAYING
-Dakonam Djené,NOT PLAYING
-Juan Iglesias,NOT PLAYING
-Peter González,NOT PLAYING
-Domingos Duarte,NOT PLAYING
-Fabrizio Angileri,NOT PLAYING
-Nabil Aberdin,NOT PLAYING
-Jiri Letácek,NOT PLAYING
-Youssouf Sabaly,NOT PLAYING
-Marc Bartra,NOT PLAYING
-William Carvalho,NOT PLAYING
-Assane Diao,NOT PLAYING
-Francisco Vieites,NOT PLAYING
-Nobel Mendy,NOT PLAYING
-Adrián San Miguel,NOT PLAYING
-Sheraldo Becker,NOT PLAYING
-Hamari Traoré,NOT PLAYING
-Jon Pacheco,NOT PLAYING
-Brais Méndez,NOT PLAYING
-Aritz Elustondo,NOT PLAYING
-Umar Sadiq,NOT PLAYING
-Jon Ander Olasagasti,NOT PLAYING
-Jon Martín,NOT PLAYING
-Álvaro Odriozola,NOT PLAYING
-Urko González de Zarate,NOT PLAYING
-Unai Marrero,NOT PLAYING
-Jon Magunazelaia,NOT PLAYING
-Arsen Zakharyan,NOT PLAYING
-Orri Steinn Óskarsson,NOT PLAYING
-Johan Mojica,NOT PLAYING
-Vedat Muriqi,NOT PLAYING
-Sergi Darder,NOT PLAYING
-Martin Valjent,NOT PLAYING
-Antonio Sánchez,NOT PLAYING
-Manuel Morlanes,NOT PLAYING
-Takuma Asano,NOT PLAYING
-Javi Llabrés,NOT PLAYING
-Siebe Van Der Heyden,NOT PLAYING
-Iván Cuéllar,NOT PLAYING
-Daniel Luna,NOT PLAYING
-Marc Doménech,NOT PLAYING
-Mateu Morey,NOT PLAYING
-Jesús Navas,NOT PLAYING
-Djibril Sow,NOT PLAYING
-Isaac Romero,NOT PLAYING
-Marcão,NOT PLAYING
-Valentín Barco,NOT PLAYING
-Kike Salas,NOT PLAYING
-Stanis Idumbo Muzambo,NOT PLAYING
-Alberto Flores,NOT PLAYING
-Pedro Ortiz,NOT PLAYING
-Álvaro Fernández,NOT PLAYING
-Saúl Ñíguez,NOT PLAYING
-Suso Fernández,NOT PLAYING
-Ayoze Pérez,NOT PLAYING
-Yéremi Pino,NOT PLAYING
-Gerard Moreno,NOT PLAYING
-Willy Kambwala,NOT PLAYING
-Denis Suárez,NOT PLAYING
-Alfonso Pedraza,NOT PLAYING
-Juan Foyth,NOT PLAYING
-Luiz Junior,NOT PLAYING
-Iker Álvarez,NOT PLAYING
-Kike García,NOT PLAYING
-Jesús Owono,NOT PLAYING
-Viktor Tsygankov,NOT PLAYING
-Oriol Romeu,NOT PLAYING
-Juan Carlos Martín,NOT PLAYING
-Ricard Artero,NOT PLAYING
-Antal Yaakobishvili,NOT PLAYING
-Jastin,NOT PLAYING
-Pau López,NOT PLAYING
-Juanpe Ramírez,NOT PLAYING
-Dani Olmo,NOT PLAYING
-Marc-André ter Stegen,NOT PLAYING
-Marc Casadó,NOT PLAYING
-Ferrán Torres,NOT PLAYING
-Eric García,NOT PLAYING
-Gerard Martín,NOT PLAYING
-Héctor Fort,NOT PLAYING
-Fermín López,NOT PLAYING
-Frenkie de Jong,NOT PLAYING
-Ronald Araújo,NOT PLAYING
-Pablo Gavi,NOT PLAYING
-Andreas Christensen,NOT PLAYING
-Marc Bernal,NOT PLAYING
-Iván Villar,NOT PLAYING
-Jailson,NOT PLAYING
-Jonathan Bamba,NOT PLAYING
-Joseph Aidoo,NOT PLAYING
-Luca de la Torre,NOT PLAYING
-Tadeo Allende,NOT PLAYING
-Marc Vidal,NOT PLAYING
-Mihailo Ristic,NOT PLAYING
-Hugo Duro,NOT PLAYING
-Dani Gómez,NOT PLAYING
-Rafa Mir,NOT PLAYING
-Enzo Barrenechea,NOT PLAYING
-Sergi Canós,NOT PLAYING
-Fran Pérez,NOT PLAYING
-José Gayà,NOT PLAYING
-Jaume Doménech,NOT PLAYING
-Mouctar Diakhaby,NOT PLAYING
-Stole Dimitrievski,NOT PLAYING
-Maximiliano Caufriez,NOT PLAYING
-Germán Valera,NOT PLAYING
-Marcos Llorente,NOT PLAYING
-César Azpilicueta,NOT PLAYING
-Juan Musso,NOT PLAYING
-Thomas Lemar,NOT PLAYING
-Javi Serrano,NOT PLAYING
-Lucas Torró,NOT PLAYING
-Jon Moncayola,NOT PLAYING
-Jorge Herrando,NOT PLAYING
-Iker Benito,NOT PLAYING
-Unai García,NOT PLAYING
-Kike Barja,NOT PLAYING
-Aitor Fernández,NOT PLAYING
-Nacho Vidal,NOT PLAYING
-Diego Moreno,NOT PLAYING
-Iker Muñoz,NOT PLAYING
-Julen Agirrezabala,NOT PLAYING
-Yeray Álvarez,NOT PLAYING
-Javier Martón,NOT PLAYING
-Unai Simón,NOT PLAYING
-Nico Serrano,NOT PLAYING
-Unai Núñez,NOT PLAYING
+Name,Position,Prediction
+Santi Comesaña,MED,8
+Iñaki Williams,DEL,7
+Antoine Griezmann,DEL,7
+Mamadou Sylla,DEL,7
+Anuar Mohamed,MED,7
+Robert Lewandowski,DEL,7
+Vinicius Junior,DEL,7
+Borja Iglesias,DEL,7
+James Rodríguez,MED,7
+Joan Garcia,POR,7
+Mauro Arambarri,MED,7
+Luis Milla,MED,7
+Adrià Altimira,DEF,7
+Rui Silva,POR,7
+Mikel Oyarzabal,DEL,7
+Sergio Gómez,MED,7
+Örjan Nyland,POR,7
+Ilias Akhomach,DEL,6
+Alexander Sorloth,DEL,6
+Raphinha,DEL,6
+Luka Modric,MED,6
+Ante Budimir,DEL,6
+Luka Sucic,MED,6
+Kiko Femenia,DEF,6
+José Ángel Carmona,DEF,6
+Carles Pérez,MED,6
+Alberto Moleiro,MED,6
+Sergio Herrera,POR,6
+Unai López,MED,6
+Jan Oblak,POR,6
+Julián Álvarez,DEL,6
+Luis Rioja,MED,5
+Pepelu,MED,5
+Florian Lejeune,DEF,5
+José María Giménez,DEF,5
+Sergio Camello,DEL,5
+Javi Galán,DEF,5
+Álex Baena,MED,5
+Augusto Batalla,POR,5
+Bryan Zaragoza,MED,5
+Jorge de Frutos,MED,5
+Rubén García,MED,5
+Diego Conde,POR,5
+Dodi Lukebakio,DEL,5
+Omar Alderete,DEF,5
+Loïc Badé,DEF,5
+Chidera Ejuke,MED,5
+Héctor Bellerín,DEF,5
+Nemanja Gudelj,DEF,5
+Paulo Gazzaniga,POR,5
+Lamine Yamal,DEL,5
+Sergi Darder,MED,5
+Jon Aramburu,DEF,5
+Igor Zubeldia,DEF,5
+Takefusa Kubo,MED,5
+Nayef Aguerd,DEF,5
+Álex Remiro,POR,5
+Martín Zubimendi,MED,5
+Thierno Barry,DEL,5
+Williot Swedberg,MED,5
+Marcos Alonso,DEF,5
+Vicente Guaita,POR,5
+Bertug Yildirim,DEL,5
+Eric Bailly,DEF,5
+Miguel Gutiérrez,DEF,5
+Yangel Herrera,MED,5
+Pape Gueye,MED,5
+Valentin Rosier,DEF,5
+Aurélien Tchouaméni,MED,5
+Jude Bellingham,MED,5
+Álvaro García,MED,5
+Federico Valverde,MED,5
+Jasper Cillessen,POR,5
+Alex Suárez,DEF,5
+José Gragera,MED,4
+Jofre Carreras,MED,4
+Pol Lozano,MED,4
+Sergi Gómez,DEF,4
+Pablo Maffeo,DEF,4
+Álex Berenguer,MED,4
+Orri Steinn Óskarsson,DEL,4
+Cyle Larin,DEL,4
+Aitor Ruibal,MED,4
+Dominik Greif,POR,4
+Karl Hein,POR,4
+Mario Martín,MED,4
+Axel Witsel,DEF,4
+Raul Moro,MED,4
+Javi Sánchez,DEF,4
+André Ferreira,POR,4
+Aimar Oroz,MED,4
+Koke Resurrección,MED,4
+Pathé Ciss,MED,4
+Lucas Torró,MED,4
+Christian Mosquera,DEF,4
+Óscar Mingueza,DEF,4
+Pau Cubarsí,DEF,4
+Pedri González,MED,4
+Alejandro Francés,DEF,4
+Andrei Ratiu,DEF,4
+Ferland Mendy,DEF,4
+Roberto López,MED,4
+Marko Dmitrovic,POR,4
+Sébastien Haller,DEL,4
+Thibaut Courtois,POR,4
+Antonio Rüdiger,DEF,4
+Eduardo Camavinga,MED,4
+Adnan Januzaj,MED,4
+Fábio Silva,DEL,4
+Dário Essugo,MED,4
+Juanma Herzog,DEF,4
+Javi Hernández,DEF,4
+Álex Sola,DEF,4
+Vitor Roque,DEL,4
+Adrià Pedrosa,DEF,4
+Lucien Agoume,MED,4
+Johnny Cardoso,MED,4
+Ander Barrenetxea,MED,4
+Samú Costa,MED,4
+Diego Rico,DEF,4
+Ricardo Rodriguez,DEF,4
+Nicolas Pépé,DEL,4
+Natan,DEF,4
+Diego Javier Llorente,DEF,4
+Viti Rozada,DEF,3
+Dimitri Foulquier,DEF,3
+Sergi Canós,MED,3
+Abdul Mumin,DEF,3
+Isi Palazón,MED,3
+Boyomo,DEF,3
+Abel Bretones,DEF,3
+Jesús Areso,DEF,3
+Thierry Correia,DEF,3
+César Tárrega,DEF,3
+Yvan Neyou,MED,3
+Iñaki Peña,POR,3
+Éder Militão,DEF,3
+Seydouba Cisse,MED,3
+Iván Martín,MED,3
+Antonio Sivera,POR,3
+Ladislav Krejcí,DEF,3
+Daniel Raba,DEL,3
+David Soria,POR,3
+Giorgi Mamardashvili,POR,3
+Oliver McBurnie,DEL,3
+Iván Balliu,DEF,3
+Rodrygo Goes,DEL,3
+José Campaña,MED,3
+Javi Muñoz,MED,3
+Kylian Mbappé,DEL,3
+Dakonam Djené,DEF,3
+Dani Parejo,MED,3
+Suso Fernández,MED,3
+Stanis Idumbo Muzambo,MED,3
+Valery Fernández,DEF,3
+Dani Rodríguez,MED,3
+Romain Perraud,DEF,3
+Juan Iglesias,DEF,3
+Manuel Morlanes,MED,3
+Chimy Ávila,DEL,3
+Brais Méndez,MED,3
+Antonio Raíllo,DEF,3
+Nico Williams,MED,3
+Aitor Paredes,DEF,3
+Yeray Álvarez,DEF,3
+Andoni Gorosabel,DEF,3
+Julen Agirrezabala,POR,3
+Pablo Ibáñez,MED,3
+Marash Kumbulla,DEF,3
+Alex Kral,MED,3
+Omar El Hilali,DEF,2
+Walid Cheddira,DEL,2
+Dani Vivian,DEF,2
+Pere Milla,MED,2
+Mikel Vesga,MED,2
+Oihan Sancet,MED,2
+Kike García,DEL,2
+Stoichkov,DEL,2
+Robert Navarro,MED,2
+Sergi Altimira,MED,2
+Omar Mascarell,MED,2
+Sheraldo Becker,DEL,2
+Vedat Muriqi,DEL,2
+Johan Mojica,DEF,2
+Mikel Jauregizar,MED,2
+Unai Gómez,MED,2
+Tomás Conechny,MED,2
+Chrisantus Uche,MED,2
+Joan Jordan,MED,2
+Yéremi Pino,MED,2
+Juan Berrocal,DEF,2
+Peque,DEL,2
+Sergi Cardona,DEF,2
+Enzo Barrenechea,MED,2
+Eray Cömert,DEF,2
+Luis Pérez,DEF,2
+Alejo Véliz,DEL,2
+Kike Pérez,MED,2
+Álex Muñoz,DEF,2
+Carlos Dominguez,DEF,2
+Andriy Lunin,POR,2
+Iago Aspas,DEL,2
+Marc Casadó,MED,2
+Pablo Torre,MED,2
+Daniel Carvajal,DEF,2
+Lucas Vázquez,DEF,2
+Pau Víctor,DEL,2
+Fermín López,MED,2
+Alejandro Balde,DEF,2
+Jules Koundé,DEF,2
+Diego García,DEL,2
+Alejandro Catena,DEF,2
+Alex Padilla,POR,2
+Rubén Peña,DEF,2
+Stanko Juric,MED,2
+Víctor Meseguer,MED,2
+Selim Amallah,MED,2
+Rodrigo Riquelme,MED,2
+Javi Rodríguez,DEF,2
+Hugo Duro,DEL,2
+Aridane Hernández,DEF,2
+Gerard Gumbau,MED,2
+Óscar Valentín,MED,2
+Rodrigo De Paul,MED,2
+Conor Gallagher,MED,2
+Hugo Novoa,DEF,2
+Abel Ruiz,DEL,2
+Arnaut Danjuma,DEL,2
+Christian Stuani,DEL,2
+Arnau Martínez,DEF,2
+Santiago Mouriño,DEF,2
+Bryan Gil,MED,2
+Carlos Romero,DEF,1
+Djibril Sow,MED,1
+Antonio Lato,DEF,1
+Abde Ezzalzouli,DEL,1
+Gonzalo Montiel,DEF,1
+Tanguy Nianzou,DEF,1
+Nahuel Tenaglia,DEF,1
+Carlos Vicente,MED,1
+Nabil Aberdin,DEF,1
+Raúl Albiol,DEF,1
+Abdon Prats,DEL,1
+Álvaro Tejero,DEF,1
+Yuri Berchiche,DEF,1
+Óscar De Marcos,DEF,1
+Irvin Cardona,DEL,1
+Álvaro Aguado,MED,1
+Gorka Guruzeta,DEL,1
+Brian Oliván,DEF,1
+Óscar Trejo,MED,1
+Alfonso González,MED,1
+Scott McKenna,DEF,1
+Pablo Marín,MED,1
+Pablo Fornals,MED,1
+Giovani Lo Celso,MED,1
+Chiquinho,MED,1
+Abdulai Juma Bah,DEF,1
+Juan Miguel Latasa,DEL,1
+Ángel Correa,DEL,1
+Reinildo Mandava,DEF,1
+Unai Núñez,DEF,1
+Nahuel Molina,DEF,1
+Dani Gómez,DEL,1
+Raúl Chasco,DEF,1
+Pablo Barrios,MED,1
+Benito Ramírez,MED,1
+Dani Ceballos,MED,1
+Arda Güler,MED,1
+José Gayà,DEF,1
+Anastasios Douvikas,DEL,1
+Sergi Domínguez,DEF,1
+Jorge Sáenz,DEF,1
+Íñigo Martínez,DEF,1
+Renato Tapia,MED,1
+Enric Franquesa,DEF,1
+Donny van de Beek,MED,1
+Munir El Haddadi,DEL,1
+Yaser Asprilla,MED,1
+Gabriel Misehouy,MED,1
+Matija Nastasic,DEF,1
+Toni Martinez,DEL,1
+Iker Losada,MED,0
+Jon Guridi,MED,0
+Leandro Cabrera,DEF,0
+Íñigo Lekue,DEF,0
+Giuliano Simeone,DEL,0
+José Arnáiz,DEL,0
+Álvaro Djaló,DEL,0
+Nico Serrano,MED,0
+Pablo Durán,DEL,0
+Hugo Álvarez ,MED,0
+Javier Manquillo,DEF,0
+Franco Cervi,MED,0
+Sergi Guardiola,DEL,0
+Moi Gómez,MED,0
+Clément Lenglet,DEF,0
+Yarek Gasiorowski,DEF,0
+Borja Mayoral,DEL,0
+Marc Bartra,DEF,0
+Marcão,DEF,0
+Carles Aleñá,MED,0
+Martin Valjent,DEF,0
+Ander Herrera,MED,0
+Cédric Bakambu,DEL,0
+Aleksandar Sedlar,DEF,0
+Ramón Terrats,MED,0
+Antonio Blanco,MED,0
+Alvaro Rodríguez,DEL,0
+Alberto Risco,MED,0
+Abdel Abqar,DEF,0
+Carlos Benavidez,MED,0
+Manu Sánchez,DEF,0
+Carlos Martín,DEL,0
+Íñigo Ruiz de Galarreta,MED,0
+Marcos André,DEL,0
+Samuel Lino,MED,0
+Óscar Rodríguez,MED,0
+Adrián Pica,DEF,0
+Abde Rebbach,MED,0
+Darko Brasanac,MED,0
+Luka Romero,MED,0
+Marc Cardona,DEL,0
+Fran Beltrán,MED,0
+Ilaix Moriba,MED,0
+Héctor Fort,DEF,0
+Dinko Horkas,POR,0
+Hugo Sotelo,MED,0
+Randy Nteka,DEL,0
+Pablo Gavi,MED,0
+Bojan Miovski,DEL,0
+Carl Starfelt,DEF,0
+Miguel de la Fuente,DEL,0
+Mario Maroto,MED,-1
+Damián Rodríguez,MED,-1
+Jonathan Bamba,MED,-1
+Albert Sambi Lokonga,MED,-1
+Juan Bernat,DEF,-1
+Isaac Romero,DEL,-1
+Juanlu Sánchez,DEF,-1
+Marc Roca,MED,-1
+Leo Román,POR,-1
+Logan Costa,DEF,-1
+Kelechi Iheanacho,DEL,-1
+Aihen Muñoz,DEF,-1
+Peter González,MED,-1
+Antoniu Roca,MED,-1
+Amath Ndiaye,DEL,-1
+Iván Sánchez,MED,-1
+Adrián Embarba,MED,-1
+Rodrigo Abajas,DEF,-1
+Kirian Rodríguez,MED,-1
+Ansu Fati,DEL,-1
+Robin Le Normand,DEF,-1
+Brahim Díaz,MED,-1
+Min Su Kim,DEL,-1
+Cristian Portu,MED,-1
+Jhon Solís,MED,-1
+Ferrán Torres,DEL,-1
+Fran García,DEF,-1
+Eric García,DEF,-1
+Frenkie de Jong,MED,-1
+Sergio Carreira,DEF,-1
+Beñat Turrientes,MED,-2
+Ander Guevara,MED,-2
+Jesús Navas,DEF,-2
+José Manuel Copete,DEF,-2
+Fernando Calero,DEF,-2
+Jon Ander Olasagasti,MED,-2
+Juanpe Ramírez,DEF,-2
+Viktor Tsygankov,MED,-2
+Daley Blind,DEF,-2
+Oriol Romeu,MED,-2
+Hugo Guillamón,MED,-2
+Juan Musso,POR,-2
+Jon Moncayola,MED,-2
+Beñat Prados,MED,-2
+Javi Puado,DEL,-2
+Edu Expósito,MED,NOT PLAYING
+Fernando Pacheco,POR,NOT PLAYING
+Salvi Sánchez,MED,NOT PLAYING
+Omar Sadik,DEL,NOT PLAYING
+Naci Ünüvar,MED,NOT PLAYING
+Ángel Fortuño,POR,NOT PLAYING
+Lucas Rosa,DEF,NOT PLAYING
+Darwin Machís,DEL,NOT PLAYING
+Chuki,MED,NOT PLAYING
+Kenedy,MED,NOT PLAYING
+César de la Hoz,MED,NOT PLAYING
+Cenk Özkacar,DEF,NOT PLAYING
+Álvaro Aceves,POR,NOT PLAYING
+Pep Chavarría,DEF,NOT PLAYING
+Dani Cárdenas,POR,NOT PLAYING
+Alfonso Espino,DEF,NOT PLAYING
+Pedro Díaz,MED,NOT PLAYING
+ Diego Méndez,MED,NOT PLAYING
+Raúl De Tomás,DEL,NOT PLAYING
+Pelayo Fernández,DEF,NOT PLAYING
+Jonathan Montiel,MED,NOT PLAYING
+Sandro Ramírez,DEL,NOT PLAYING
+Marvin Park,MED,NOT PLAYING
+Jaime Mata,DEL,NOT PLAYING
+Manuel Fuster,MED,NOT PLAYING
+Enzo Loiodice,MED,NOT PLAYING
+Mika Mármol,DEF,NOT PLAYING
+Fabio González,MED,NOT PLAYING
+Daley Sinkgraven,DEF,NOT PLAYING
+Álvaro Valles,POR,NOT PLAYING
+Iván Gil,MED,NOT PLAYING
+Pejiño,MED,NOT PLAYING
+Álvaro Killane,POR,NOT PLAYING
+Endrick,DEL,NOT PLAYING
+David Alaba,DEF,NOT PLAYING
+Jacobo Ramón,DEF,NOT PLAYING
+Jesús Vallejo,DEF,NOT PLAYING
+Juan Soriano,POR,NOT PLAYING
+Julián Chicco,MED,NOT PLAYING
+Alvin Abajas,POR,NOT PLAYING
+Naim García,DEL,NOT PLAYING
+Jackson Porozo,DEF,NOT PLAYING
+Yellu Santiago,MED,NOT PLAYING
+Domingos Duarte,DEF,NOT PLAYING
+Fabrizio Angileri,DEF,NOT PLAYING
+Jiri Letácek,POR,NOT PLAYING
+Youssouf Sabaly,DEF,NOT PLAYING
+William Carvalho,MED,NOT PLAYING
+Juanmi Jiménez,DEL,NOT PLAYING
+Assane Diao,DEL,NOT PLAYING
+Francisco Vieites,POR,NOT PLAYING
+Isco Alarcón,MED,NOT PLAYING
+Nobel Mendy,DEF,NOT PLAYING
+Adrián San Miguel,POR,NOT PLAYING
+Hamari Traoré,DEF,NOT PLAYING
+Jon Pacheco,DEF,NOT PLAYING
+Aritz Elustondo,DEF,NOT PLAYING
+Umar Sadiq,DEL,NOT PLAYING
+Jon Martín,DEF,NOT PLAYING
+Álvaro Odriozola,DEF,NOT PLAYING
+Urko González de Zarate,MED,NOT PLAYING
+Unai Marrero,POR,NOT PLAYING
+Arsen Zakharyan,MED,NOT PLAYING
+Antonio Sánchez,MED,NOT PLAYING
+Takuma Asano,DEL,NOT PLAYING
+Javi Llabrés,MED,NOT PLAYING
+Siebe Van Der Heyden,DEF,NOT PLAYING
+Iván Cuéllar,POR,NOT PLAYING
+Daniel Luna,MED,NOT PLAYING
+Marc Doménech,MED,NOT PLAYING
+Mateu Morey,DEF,NOT PLAYING
+Valentín Barco,DEF,NOT PLAYING
+Kike Salas,DEF,NOT PLAYING
+Alberto Flores,POR,NOT PLAYING
+Pedro Ortiz,MED,NOT PLAYING
+Álvaro Fernández,POR,NOT PLAYING
+Saúl Ñíguez,MED,NOT PLAYING
+Ayoze Pérez,DEL,NOT PLAYING
+Gerard Moreno,DEL,NOT PLAYING
+Willy Kambwala,DEF,NOT PLAYING
+Denis Suárez,MED,NOT PLAYING
+Alfonso Pedraza,DEF,NOT PLAYING
+Juan Foyth,DEF,NOT PLAYING
+Luiz Junior,POR,NOT PLAYING
+Iker Álvarez,POR,NOT PLAYING
+Asier Villalibre,DEL,NOT PLAYING
+Jesús Owono,POR,NOT PLAYING
+Juan Carlos Martín,POR,NOT PLAYING
+Ricard Artero,MED,NOT PLAYING
+Antal Yaakobishvili,DEF,NOT PLAYING
+Jastin,MED,NOT PLAYING
+Pau López,POR,NOT PLAYING
+Dani Olmo,DEL,NOT PLAYING
+Marc-André ter Stegen,POR,NOT PLAYING
+Ronald Araújo,DEF,NOT PLAYING
+Andreas Christensen,DEF,NOT PLAYING
+Marc Bernal,MED,NOT PLAYING
+Iván Villar,POR,NOT PLAYING
+Jailson,DEF,NOT PLAYING
+Joseph Aidoo,DEF,NOT PLAYING
+Luca de la Torre,MED,NOT PLAYING
+Tadeo Allende,DEL,NOT PLAYING
+Marc Vidal,POR,NOT PLAYING
+Mihailo Ristic,DEF,NOT PLAYING
+Rafa Mir,DEL,NOT PLAYING
+Fran Pérez,MED,NOT PLAYING
+Jaume Doménech,POR,NOT PLAYING
+Mouctar Diakhaby,DEF,NOT PLAYING
+Stole Dimitrievski,POR,NOT PLAYING
+Maximiliano Caufriez,DEF,NOT PLAYING
+Germán Valera,MED,NOT PLAYING
+Marcos Llorente,MED,NOT PLAYING
+César Azpilicueta,DEF,NOT PLAYING
+Thomas Lemar,MED,NOT PLAYING
+Javi Serrano,MED,NOT PLAYING
+Jorge Herrando,DEF,NOT PLAYING
+Iker Benito,MED,NOT PLAYING
+Unai García,DEF,NOT PLAYING
+Kike Barja,MED,NOT PLAYING
+Aitor Fernández,POR,NOT PLAYING
+Dimitrios Stamatakis,POR,NOT PLAYING
+Nacho Vidal,DEF,NOT PLAYING
+Diego Moreno,DEF,NOT PLAYING
+Iker Muñoz,MED,NOT PLAYING
+Adama Boiro,DEF,NOT PLAYING
+Javier Martón,DEL,NOT PLAYING
+Unai Simón,POR,NOT PLAYING
