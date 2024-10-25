@@ -1,6 +1,6 @@
 // Function to fetch and parse the CSV file
 async function loadPlayers() {
-    const response = await fetch('GW10.csv');
+    const response = await fetch('GW11.csv');
     const data = await response.text();
 
     console.log("CSV Data Loaded: ", data); // Debugging: Check if CSV is being loaded

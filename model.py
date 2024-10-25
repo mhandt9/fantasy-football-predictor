@@ -4,9 +4,10 @@ from formatting import Formatting # from formatting.py
 from sklearn.preprocessing import LabelEncoder
 from sklearn.ensemble import RandomForestRegressor
 
+MWS_PLAYED = 11
 
 players = pd.read_csv('data/players.csv')
-matches = pd.read_csv('data/matches.csv')
+matches = pd.read_csv('data/matches.csv') # from fbref.com
 
 # Rename some teams to more consistent names
 players = players.replace('Athletic', 'Athletic Club')
@@ -43,19 +44,19 @@ df1_clean['Name'] = enc.fit_transform(df1_clean['Name'])
 
 
 # Filter to matchweeks already played to train the model
-X_train = df1_clean[df1_clean['Wk'] < 10].drop(['Target', 'Wk'], axis=1)
-y = df1_clean[df1_clean['Wk'] < 10]['Target']
+X_train = df1_clean[df1_clean['Wk'] < MWS_PLAYED].drop(['Target', 'Wk'], axis=1)
+y = df1_clean[df1_clean['Wk'] < MWS_PLAYED]['Target']
 
 
 # Next matchweek as X_test
-X_test = df1_clean[df1_clean['Wk'] == 10].drop(['Target', 'Wk'], axis=1)
+X_test = df1_clean[df1_clean['Wk'] == MWS_PLAYED].drop(['Target', 'Wk'], axis=1)
 
 
 # Training and predicting
 regr = RandomForestRegressor(n_estimators=200, max_depth=None, random_state=0)
 regr.fit(X_train, y)
 preds = regr.predict(X_test)
-GW10_prediction = pd.DataFrame({'Name':enc.inverse_transform(X_test['Name']), 'Prediction':preds})
+prediction = pd.DataFrame({'Name':enc.inverse_transform(X_test['Name']), 'Prediction':preds})
 
 
 # Print feature importances
@@ -63,7 +64,7 @@ print(f'Feature importances: {regr.feature_importances_}')
 
 
 # Arbitrarily decide that predictions below -2 are predicting the player not to play
-GW10_prediction['Prediction'] = GW10_prediction['Prediction'].apply(lambda x: round(x) if x > -2 else 'NOT PLAYING').astype(str)
+prediction['Prediction'] = prediction['Prediction'].apply(lambda x: round(x) if x > -2 else 'NOT PLAYING').astype(str)
 
 
 # Sort descending and save as CSV
@@ -74,5 +75,5 @@ def sort_preds(df):
 
     return df_sorted.drop('helper_col', axis=1)
 
-GW10_prediction = sort_preds(GW10_prediction)
-GW10_prediction.to_csv('GW10_pred.csv')
+prediction = sort_preds(prediction)
+prediction.to_csv('GW'+str(MWS_PLAYED)+'_pred.csv')
